@@ -1,0 +1,7 @@
+*.log
+node_modules/
+.npm
+.eslintcache
+*.tgz
+.cache/
+dist/

@@ -1,0 +1,23 @@
+{
+  "name": "preact-app-template",
+  "version": "0.0.1",
+  "description": "Preact + TypeScript + Parcel",
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "clean": "rm -rf dist .cache",
+    "lint": "tslint -c tslint.json -p tsconfig.json src/**/*.tsx?"
+  },
+  "keywords": [],
+  "author": "Tan Nhu",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
+    "parcel-bundler": "^1.9.7",
+    "preact": "^8.3.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  }
+}
