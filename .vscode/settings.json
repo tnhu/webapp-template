@@ -17,6 +17,6 @@
         "yarn*.log": true,
         ".git*": true,
         ".vscode": true,
-        "dist": true
+        "dist": false
     }
 }
