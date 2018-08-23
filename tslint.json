@@ -1,8 +1,6 @@
 {
     "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
+    "extends": [ "tslint-config-airbnb", "tslint-react", "tslint-config-prettier"],
     "jsRules": {},
     "rules": {
         "ordered-imports": false,
@@ -17,7 +15,9 @@
         "eofline": false,
         "max-classes-per-file": false,
         "member-access": false,
-        "member-ordering": false
+        "member-ordering": false,
+        "import-name": false,
+        "no-unused-variable": false
     },
     "rulesDirectory": []
 }

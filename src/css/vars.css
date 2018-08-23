@@ -1,0 +1,7 @@
+@import './colors.css';
+
+:root {
+  --text-color: var(--black);
+  --link-color: var(--blue);
+  --link-color-hover: var(--green);
+}
