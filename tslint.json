@@ -1,23 +1,28 @@
 {
-    "defaultSeverity": "error",
-    "extends": [ "tslint-config-airbnb", "tslint-react", "tslint-config-prettier"],
-    "jsRules": {},
-    "rules": {
-        "ordered-imports": false,
-        "quotemark": [true, "single", "avoid-escape", "avoid-template", "jsx-double"],
-        "semicolon": false,
-        "arrow-parens": false,
-        "trailing-comma": false,
-        "object-literal-sort-keys": false,
-        "interface-name": false,
-        "no-unnecessary-initializer": false,
-        "variable-name": false,
-        "eofline": false,
-        "max-classes-per-file": false,
-        "member-access": false,
-        "member-ordering": false,
-        "import-name": false,
-        "no-unused-variable": false
-    },
-    "rulesDirectory": []
+  "defaultSeverity": "error",
+  "extends": [ "tslint-config-airbnb", "tslint-react", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+      "ordered-imports": false,
+      "quotemark": [true, "single", "avoid-escape", "avoid-template", "jsx-double"],
+      "semicolon": [false, "never"],
+      "arrow-parens": false,
+      "trailing-comma": false,
+      "object-literal-sort-keys": false,
+      "interface-name": false,
+      "no-unnecessary-initializer": false,
+      "variable-name": false,
+      "eofline": false,
+      "max-classes-per-file": false,
+      "member-access": false,
+      "member-ordering": false,
+      "import-name": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "scripts/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "rulesDirectory": []
 }
