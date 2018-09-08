@@ -12,14 +12,14 @@ process.on('unhandledRejection', err => {
 })
 
 // Ensure environment variables are read.
-require('./conf/env')
+require('./webpack/env')
 
 const path = require('path')
 const chalk = require('chalk')
 const fs = require('fs-extra')
 const webpack = require('webpack')
-const config = require('./conf/webpack.prod')
-const paths = require('./conf/paths')
+const config = require('./webpack/webpack.prod')
+const paths = require('./webpack/paths')
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles')
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages')
 const printHostingInstructions = require('react-dev-utils/printHostingInstructions')

@@ -1,14 +1,14 @@
 {
-  "name": "my-app-1",
+  "name": "webapp-template",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "lint": "tslint -c tslint.json -p tsconfig.json src/**/*.ts{,x}"
   },
   "devDependencies": {
+    "@blueprintjs/core": "^3.5.1",
     "@types/node": "^10.9.2",
     "@types/react": "^16.4.12",
     "@types/react-dom": "^16.0.7",
@@ -46,8 +46,5 @@
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

@@ -12,7 +12,7 @@ process.on('unhandledRejection', err => {
 })
 
 // Ensure environment variables are read.
-require('./conf/env')
+require('./webpack/env')
 
 const fs = require('fs')
 const chalk = require('chalk')
@@ -22,9 +22,9 @@ const clearConsole = require('react-dev-utils/clearConsole')
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles')
 const { choosePort, createCompiler, prepareProxy, prepareUrls } = require('react-dev-utils/WebpackDevServerUtils')
 const openBrowser = require('react-dev-utils/openBrowser')
-const paths = require('./conf/paths')
-const config = require('./conf/webpack.dev')
-const createDevServerConfig = require('./conf/webpack.dev-server')
+const paths = require('./webpack/paths')
+const config = require('./webpack/webpack.dev')
+const createDevServerConfig = require('./webpack/dev-server')
 
 const useYarn = fs.existsSync(paths.yarnLockFile)
 const isInteractive = process.stdout.isTTY
@@ -77,7 +77,6 @@ choosePort(HOST, DEFAULT_PORT)
       console.log(chalk.cyan('Starting the development server...\n'))
       openBrowser(urls.localUrlForBrowser)
     })
-
     ;['SIGINT', 'SIGTERM'].forEach(function(sig) {
       process.on(sig, function() {
         devServer.close()
