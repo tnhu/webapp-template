@@ -1,23 +1,23 @@
 {
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/.cache": true,
-        "npm-debug.log*": true,
-        "yarn*.lock": true,
-        "yarn*.log": true,
-        ".git*": true,
-        ".vscode": true,
-        "dist": true
-    },
-    "files.exclude": {
-        "**/node_modules": true,
-        "**/.cache": true,
-        "npm-debug.log*": true,
-        "yarn*.lock": true,
-        "yarn*.log": true,
-        ".git*": true,
-        ".vscode": true,
-        "dist": false
-    },
-    "editor.formatOnSave": true
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.cache*": true,
+    "npm-debug.log*": true,
+    "yarn*.lock": true,
+    "yarn*.log": true,
+    ".git*": true,
+    ".vscode": true,
+    "dist": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.cache*": true,
+    "npm-debug.log*": true,
+    "yarn*.lock": true,
+    "yarn*.log": true,
+    ".git*": true,
+    ".vscode": false,
+    "dist": false
+  },
+  "editor.formatOnSave": true
 }
